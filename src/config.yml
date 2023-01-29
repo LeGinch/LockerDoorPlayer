@@ -1,0 +1,200 @@
+###################################################
+#        THIS IS A MESSAGE CONFIG SECTION         #
+###################################################
+
+messages:
+  #prefix of messsages in player chat and console#
+  prefix: "[LockerDoorPlayer]"
+
+  #Messages when enabling or disalbling plugin#
+  plugin:
+    #If set to "true", the messages as show in console
+    enable: "true"
+
+    #Enabling console message
+    start: "Starting..."
+
+    #Disabling console message
+    stop: "Disabling Plugin..."
+
+###################################################
+#           Player chat message                   #
+#           If you want to use                    #
+#   door name -> use XdoorX in message            #
+#owner door name -> use XownerX in message        #
+###################################################
+  player:
+    #this is a message configuration if the door when vised is recorded in datafile
+    doorexist:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Message:
+      #-> use only XdoorX if you want to use door name in your message !
+      message: "§cLa porte est déja enregistrée avec le nom:§e XdoorX"
+
+    #this is a message configuration if the door when record in datafile
+    setdoor:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Message:
+      #-> use only XdoorX if you want to use  name door in your message !
+      message: "§6Enregistrement de la porte§e XdoorX §6..."
+
+    #this is a message configuration when door is broken by Administrtor (OP only)
+    removedoor:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Message:
+      #-> use only XdoorX if you want to use door name in your message !
+      message: "§aPorte§e XdoorX §aretirée avec succès !"
+
+    #this is a message configuration if the door vised doesn't exist in chat
+    doordoesnotexist:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Message:
+      # /!\ XdoorX doesn't work in this message !
+      message: "La porte n'existe pas"
+
+    #this is a message configuration when player try to break the door
+    nopermtobreak:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Message:
+      #-> use only XdoorX if you want to use door name in your message !
+      message: "§cVous ne pouvez pas casser cette porte."
+
+    #this is a message configuration when player try to use door owned
+    nopermtouse:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Message:
+      #-> use XdoorX and XownerX if you want to use name door  in your message !
+      message: "cette porte appartient a XownerX"
+
+    #this is a message configuration if ldp command is too short
+    commandtoshort:
+
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Messages:
+      #-> you have 3 line for set a message ! no use XdoorX or Xowner !!
+      message01: "§cLa commande est trop courte ! merci d'utiliser la bonne syntaxe :"
+      message02: "§6/ldp addOwner <door name> <pseudo>"
+      message03: "§6/ldp removeOwner <door name> <pseudo>"
+
+    #this is a message configuration if ldp command is too long
+    commandtolong:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Messages:
+      #-> you have 3 line for set a message ! no use XdoorX or Xowner !!
+      message01: "§cLa commande est trop longue ! merci d'utiliser la bonne syntaxe :"
+      message02: "§6/ldp addOwner <door name> <pseudo>"
+      message03: "§6/ldp removeOwner <door name> <pseudo>"
+
+    #this is a message configuration if owner'door is unset
+    ownerunset:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Message:
+      #-> You can use XownerX and XdoorX if you want !
+      message: "XownerX n'est plus propriétaire de la porte XdoorX"
+
+    #this is a message configuration if owner'door is set
+    ownerset:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Message:
+      #-> You can use XownerX and XdoorX if you want !
+      message: "ajout du joueur XownerX a la porte XdoorX"
+
+    #this is a message configuration if /lpd <removeOwner> <player> return no owner
+    ownerdoesnotexist:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Message:
+      #-> use only XdoorX if you want to use door name in your message !
+      message: "§cErreur aucun proprietaire inscrit sur la porte XdoorX"
+
+    #this is a message configuration if /lpd <removeOwner> is not write correctly
+    commandisnotremove:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Messages:
+      #-> you have 2 line for set a message ! no use XdoorX or Xowner !!
+      message01: "§cErreur commande inconnue ! merci d'utiliser la bonne syntaxe :"
+      message02: "§6/ldp removeOwner <door name> <pseudo>"
+
+    #this is a message configuration if /lpd <addOwner> is not write correctly
+    commandisnotadd:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Messages:
+      #-> you have 2 line for set a message ! no use XdoorX or Xowner !!
+      message01: "§cErreur commande inconnue ! merci d'utiliser la bonne syntaxe :"
+      message02: "§6/ldp addOwner <door name> <pseudo>"
+
+    #this is a message for no access (no OP) ldp command
+    noaccesscommand:
+      #Enable this Message
+      enable: "true"
+
+      #Show Prefix in message
+      prefix: "true"
+
+      #Messages:
+      #-> you have 1 line for set a message ! no use XdoorX or Xowner !!
+      message: "§4Vous n'avez pas la permission d'utiliser cette commande !"

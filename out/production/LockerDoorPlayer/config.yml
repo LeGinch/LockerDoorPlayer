@@ -1,0 +1,83 @@
+###################################################
+#        THIS IS A MESSAGE CONFIG SECTION         #
+###################################################
+messages:
+  #prefix of messsages in player chat and console#
+  prefix: "[LockerDoorPlayer]"
+
+  #Messages when enabling or disalbling plugin#
+  plugin:
+    #If set to "true", the messages as show in console
+    enable: "true"
+    #Enabling console message
+    start: "Starting..."
+    #Disabling console message
+    stop: "Disabling Plugin..."
+
+  #Player chat message
+  #If you want to use player name -> use %player% in message
+  #If you want to use door name -> use %door% in message
+  #If you want to use owner door name -> use %owner% in message
+  player:
+    doorexist:
+      enable: "true"
+      prefix: "true"
+      message: "§cLa porte est déja enregistrée avec le nom:§e XdoorX"
+    setdoor:
+      enable: "true"
+      prefix: "true"
+      message: "§6Enregistrement de la porte§e XdoorX §6..."
+    removedoor:
+      enable: "true"
+      prefix: "true"
+      message: "§aPorte§e XdoorX §aretirée avec succès !"
+    doordoesnotexist:
+      enable: "true"
+      prefix: "true"
+      message: "La porte n'existe pas"
+    nopermtobreak:
+      enable: "true"
+      prefix: "true"
+      message: "§cVous ne pouvez pas casser cette porte."
+    nopermtouse:
+      enable: "true"
+      prefix: "true"
+      message: "cette porte appartient a XownerX"
+    commandtoshort:
+      enable: "true"
+      prefix: "true"
+      message01: "§cLa commande est trop courte ! merci d'utiliser la bonne syntaxe :"
+      message02: "§6/ldp addOwner <door name> <pseudo>"
+      message03: "§6/ldp removeOwner <door name> <pseudo>"
+    commandtolong:
+      enable: "true"
+      prefix: "true"
+      message01: "§cLa commande est trop longue ! merci d'utiliser la bonne syntaxe :"
+      message02: "§6/ldp addOwner <door name> <pseudo>"
+      message03: "§6/ldp removeOwner <door name> <pseudo>"
+    ownerunset:
+      enable: "true"
+      prefix: "true"
+      message: "XownerX n'est plus propriétaire de la porte XdoorX"
+    ownerset:
+      enable: "true"
+      prefix: "true"
+      message: "ajout du joueur XownerX a la porte XdoorX"
+    ownerdoesnotexist:
+      enable: "true"
+      prefix: "true"
+      message: "§cErreur aucun proprietaire inscrit sur la porte XdoorX"
+    commandisnotremove:
+      enable: "true"
+      prefix: "true"
+      message01: "§cErreur commande inconnue ! merci d'utiliser la bonne syntaxe :"
+      message02: "§6/ldp removeOwner <door name> <pseudo>"
+    commandisnotadd:
+      enable: "true"
+      prefix: "true"
+      message01: "§cErreur commande inconnue ! merci d'utiliser la bonne syntaxe :"
+      message02: "§6/ldp addOwner <door name> <pseudo>"
+    noaccesscommand:
+      enable: "true"
+      prefix: "true"
+      message: "§4Vous n'avez pas la permission d'utiliser cette commande !"
