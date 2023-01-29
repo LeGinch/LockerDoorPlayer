@@ -12,3 +12,12 @@ commands for use (only OPs)
 
   /ldp addOwner <door Name> <player>  
   /ldp removeOwner <door Name> <player>
+  
+TEST RAPPORT
+
+--------------------------------------
+MOHIST-SERVER-1.16.5 -> SUCCESSFULL 
+SPIGOT-SERVER-1.16.3 -> SUCCESSFULL 
+SPIGOT-SERVER-1.16.5 -> SUCCESSFULL 
+MAGMA-SERVER-1.16.5  -> SUCCESSFULL 
+--------------------------------------
